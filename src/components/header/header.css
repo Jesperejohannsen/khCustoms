@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .navbar ul li:hover .dropdown {
+    display: block;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .search-bar button:focus {
+    outline: none;
+  }
+
+  .navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 4px; /* rounded corners */
+    margin-top: 10px; /* space between the dropdown and the navbar */
+  }
+  
+  .navbar ul li .dropdown li {
+    padding: 10px 0; /* vertical padding for each dropdown item */
+  }
+  
+  .navbar ul li .dropdown li a {
+    color: #007bff; /* blue text */
+    font-weight: bold; /* bold text */
+  }
+  
+  .navbar ul li .dropdown li a:hover {
+    color: #0056b3; /* darker blue text when hovering */
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease; /* smooth color transition */
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff; /* blue text when hovering */
+  }
+
+  .navbar ul li {
+    position: relative;
+    border-bottom: 5px solid transparent; /* invisible border */
+  }
+  
+  .navbar ul li:hover {
+    border-bottom-color: #f9f9f9; /* same color as dropdown background */
+  }
+  
+  .navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 100%; /* align dropdown with bottom of main item */
+    left: 0;
+  }
+  
+  .navbar ul li:hover .dropdown {
+    display: block;
+  }
