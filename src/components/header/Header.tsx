@@ -1,8 +1,15 @@
 import React, { useState } from "react";
+import NavigationMenu from './NavigationMen';
 import "./Header.css";
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const menuItems = [
+    { name: 'Home', route: '/' },
+    { name: 'About', route: '/about' },
+    // Add more items here
+  ];
 
   const handleSearchClick = () => {
     setIsSearchOpen(!isSearchOpen);
@@ -12,43 +19,7 @@ const Header = () => {
     <header className="header">
       <div className="logo">LOGO</div>
       <nav className="navbar">
-        <ul>
-          <li>
-            <a href="#">Option 1</a>
-            <ul className="dropdown">
-              <li><a href="#">Sub-option 1</a></li>
-              <li><a href="#">Sub-option 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Option 2</a>
-            <ul className="dropdown">
-              <li><a href="#">Sub-option 1</a></li>
-              <li><a href="#">Sub-option 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Option 3</a>
-            <ul className="dropdown">
-              <li><a href="#">Sub-option 1</a></li>
-              <li><a href="#">Sub-option 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Option 4</a>
-            <ul className="dropdown">
-              <li><a href="#">Sub-option 1</a></li>
-              <li><a href="#">Sub-option 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Option 5</a>
-            <ul className="dropdown">
-              <li><a href="#">Sub-option 1</a></li>
-              <li><a href="#">Sub-option 2</a></li>
-            </ul>
-          </li>
-        </ul>
+      <NavigationMenu items={menuItems} />
       </nav>
       <div className="search-bar">
         <button onClick={handleSearchClick}>🔍</button>
