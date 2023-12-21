@@ -1,31 +1,48 @@
-import React, { useState } from "react";
-import NavigationMenu from "./NavigationMenu";
-import "./Header.css";
+import  { useState } from "react";
+import NavigationMenu from "../navigationRoutes/NavigationMenu";
+import "./header.css";
 
 const Header = () => {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
+    { name: "Contact", route: "/contact" },
+    { name: "Products", route: "/products" },
+    { name: "Services", route: "/services" },
     // Add more items here
   ];
 
-  const handleSearchClick = () => {
-    setIsSearchOpen(!isSearchOpen);
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
     <header className="header">
-      <div className="logo">LOGO</div>
-      <nav className="navbar">
-        <NavigationMenu items={menuItems} />
-      </nav>
-      <div className="search-bar">
-        <button onClick={handleSearchClick}>🔍</button>
-        {isSearchOpen && <input type="text" placeholder="Search..." />}
+    <div className={`logo ${isOpen ? 'hidden' : ''}`}>KH Customs</div>
+    <nav className="navbar">
+      <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-    </header>
+      <NavigationMenu items={menuItems} isOpen={isOpen} />
+    </nav>
+    <div className="search-bar">
+      <input 
+        type="text" 
+        placeholder="Search..." 
+        value={searchValue} 
+        onChange={handleSearchChange} 
+      />
+    </div>
+  </header>
   );
 };
 
