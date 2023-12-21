@@ -11,36 +11,18 @@
     color: #007bff;
   }
   
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
   .navbar ul li {
-    position: relative;
-    border-bottom: 5px solid transparent;
+    margin-right: 20px; 
   }
-  
-  .navbar ul li:hover {
-    border-bottom-color: #f9f9f9;
-  }
-  
+
   .navbar ul li a {
+    color: black;
     text-decoration: none;
-    color: #000000;
-    transition: color 0.3s ease;
+    font-size: 20px;
   }
-  
-  .navbar ul li a:hover,
-  .navbar ul li:hover .dropdown {
-    color: #007bff;
-    display: block;
-  }
-  
-  .navbar ul li .dropdown {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-  }
-  

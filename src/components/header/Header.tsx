@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import NavigationMenu from "./NavigationMenu";
-import "./Header.css";
+import  { useState } from "react";
+import NavigationMenu from "../navigationRoutes/NavigationMenu";
+import "./header.css";
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -8,6 +8,9 @@ const Header = () => {
   const menuItems = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
+    { name: "Contact", route: "/contact" },
+    { name: "Products", route: "/products" },
+    { name: "Services", route: "/services" },
     // Add more items here
   ];
 
@@ -17,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">LOGO</div>
+      <div className="logo">KH Customs</div>
       <nav className="navbar">
         <NavigationMenu items={menuItems} />
       </nav>
