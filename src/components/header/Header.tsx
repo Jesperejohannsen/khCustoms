@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import NavigationMenu from './NavigationMen';
+import NavigationMenu from "./NavigationMenu";
 import "./Header.css";
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Home', route: '/' },
-    { name: 'About', route: '/about' },
+    { name: "Home", route: "/" },
+    { name: "About", route: "/about" },
     // Add more items here
   ];
 
@@ -19,7 +19,7 @@ const Header = () => {
     <header className="header">
       <div className="logo">LOGO</div>
       <nav className="navbar">
-      <NavigationMenu items={menuItems} />
+        <NavigationMenu items={menuItems} />
       </nav>
       <div className="search-bar">
         <button onClick={handleSearchClick}>🔍</button>
