@@ -1,13 +1,12 @@
-import './App.css'
-import Header from './components/header/Header'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/header/Header';
 
-function App() {
+const App: React.FC = () => (
+  <Router>
+    <Header />
+    {/* Other components */}
+  </Router>
+);
 
-  return (
-    <>
-      <Header />
-    </>
-  )
-}
-
-export default App
+export default App;
