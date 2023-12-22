@@ -3,13 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
 
 .logo img {
   height: 40px;
-  width: auto; 
+  width: auto;
 }
 
 .navbar ul {
@@ -44,7 +44,7 @@
   padding: 0 20px;
   font-size: 16px;
   outline: none;
-  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 .search-bar input::placeholder {
@@ -84,9 +84,12 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .logo {
     display: none;
+  }
+  .navbar {
+    width: 80%;
   }
   .navbar ul {
     padding-top: 60px;
