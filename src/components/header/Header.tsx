@@ -8,11 +8,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", route: "/" },
-    { name: "About", route: "/about" },
-    { name: "Contact", route: "/contact" },
+    { name: "Hjem", route: "/" },
+    { name: "Om KHCustom", route: "/about" },
+    { name: "Kontakt os", route: "/contact" },
     { name: "Products", route: "/products" },
-    { name: "Services", route: "/services" },
+    { name: "Vores løsninger", route: "/services" },
     // Add more items here
   ];
 
@@ -40,7 +40,7 @@ const Header = () => {
     <div className="search-bar">
       <input 
         type="text" 
-        placeholder="Search..." 
+        placeholder="Søg her..." 
         value={searchValue} 
         onChange={handleSearchChange} 
       />

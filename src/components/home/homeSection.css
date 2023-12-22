@@ -1,10 +1,11 @@
 .home-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 50px;
   gap: 20px;
-  text-align: center;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -12,8 +13,12 @@
   margin-bottom: 10px;
 }
 
+.home-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .home-section-content {
-  max-width: 600px;
+  max-width: 50%;
 }
 
 .home-section-title {
@@ -31,42 +36,43 @@
 }
 
 .home-section-image {
-  width: 100%;
+  max-width: 45%;
   height: auto;
 }
 
-.button {
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-color 0.3s ease;
+.contactForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.button:hover {
-  background-color: #0056b3;
+.contactFormHeader{
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 @media (max-width: 600px) {
-  .home-section {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
+  .home-section, .home-section.home-section-customs, .contactForm {
     flex-direction: column;
-    justify-content: center;
+    width: 80%; 
+    margin: 0 auto; 
   }
-  .home-section-text {
-    font-size: 1em;
-  }
-  .home-section-image {
+
+  .home-section-content, .home-section-image,
+  .home-section.home-section-customs .home-section-content,
+  .home-section.home-section-customs .home-section-image {
     max-width: 100%;
-    display: block;
-    margin: auto;
+  }
+  h2 {
+    text-align: center;
   }
   .button {
-    padding: 8px 16px;
+    display: block;
+    margin: 0 auto;
   }
 }

@@ -9,6 +9,7 @@ const HomeSection = () => {
     <>
       <section className="home-section home-section-customs">
         <div className="home-section-content">
+        <h2 className="home-section-title">KH Customs</h2>
           <p className="home-section-text">
             KH-Customs tilbyde en lang række af services i forbindelse med told
             ved import og/eller eksport Med mange års erfaring, står KH-Customs
@@ -49,8 +50,8 @@ const HomeSection = () => {
       </section>
 
       <section className="home-section home-section-about">
-        <div className="home-section-content">
-          <h2 className="home-section-title">Kontakt os</h2>
+        <div className="contactForm">
+          <h2 className="contactFormHeader">Kontakt os</h2>
           <ContactForm />
         </div>
       </section>
