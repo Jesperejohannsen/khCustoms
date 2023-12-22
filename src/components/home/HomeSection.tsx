@@ -1,4 +1,5 @@
 import './homeSection.css';
+import customsPicture from  '../../assets/customsPicture.png';
 
 const HomeSection = () => {
   return (
@@ -10,8 +11,7 @@ const HomeSection = () => {
         <button className="home-section-button">Learn More</button>
       </div>
       <div className="home-section-image">
-        {/* You can replace this with an actual image */}
-        <img src="path-to-your-image.jpg" alt="About us" />
+        <img src={customsPicture} alt="Customs" />
       </div>
     </section>
   );

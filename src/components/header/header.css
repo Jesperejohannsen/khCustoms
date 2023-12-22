@@ -3,15 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background-color: #f8f9fa;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: none;
+.logo img {
+  height: 40px;
+  width: auto; 
 }
 
 .navbar ul {

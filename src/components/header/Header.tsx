@@ -1,6 +1,7 @@
 import  { useState } from "react";
 import NavigationMenu from "../navigationRoutes/NavigationMenu";
 import "./header.css";
+import logo from "../../assets/khCustomLogo.png";
 
 const Header = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -25,7 +26,9 @@ const Header = () => {
 
   return (
     <header className="header">
-    <div className={`logo ${isOpen ? 'hidden' : ''}`}>KH Customs</div>
+     <div className={`logo ${isOpen ? 'hidden' : ''}`}>
+      <img src={logo} alt="KH Customs" />
+    </div>
     <nav className="navbar">
       <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div></div>
