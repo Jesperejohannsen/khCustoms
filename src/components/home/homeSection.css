@@ -1,45 +1,78 @@
 .home-section {
-    display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.home-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.home-section-content {
+  max-width: 50%;
+}
+
+.home-section-title {
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+.home-section-text {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.home-section-image {
+  max-width: 45%;
+  height: auto;
+}
+
+.contactForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactFormHeader{
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+@media (max-width: 600px) {
+  .home-section, .home-section.home-section-customs, .contactForm {
     flex-direction: column;
-    padding: 50px;
-    gap: 20px;
+    width: 80%; 
+    margin: 0 auto; 
+  }
+
+  .home-section-content, .home-section-image,
+  .home-section.home-section-customs .home-section-content,
+  .home-section.home-section-customs .home-section-image {
+    max-width: 100%;
+  }
+  h2 {
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
   }
-  
-  .home-section-content {
-    max-width: 600px;
-  }
-  
-  .home-section-title {
-    font-size: 2.5em;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .home-section-text {
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-  }
-  
   .button {
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
   }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
+}
