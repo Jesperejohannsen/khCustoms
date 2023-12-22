@@ -1,0 +1,51 @@
+.home-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f9fa;
+  }
+  
+  .home-section-content {
+    text-align: center;
+  }
+  
+  .home-section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .home-section-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .home-section-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-section-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .home-section {
+      flex-direction: row;
+    }
+  
+    .home-section-content {
+      text-align: left;
+      max-width: 50%;
+    }
+  
+    .home-section-image img {
+      max-width: 50%;
+    }
+  }
