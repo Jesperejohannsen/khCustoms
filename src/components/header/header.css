@@ -7,6 +7,12 @@
   margin-bottom: 10px;
 }
 
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo img {
   height: 40px;
   width: auto;
@@ -16,6 +22,7 @@
   display: flex;
   list-style: none;
   padding: 0;
+  margin-right: 30px;
 }
 
 .navbar ul li {
@@ -34,21 +41,6 @@
 
 .navbar ul li a:hover {
   color: #007bff;
-}
-
-.search-bar input {
-  width: 200px;
-  height: 35px;
-  border: none;
-  border-radius: 20px;
-  padding: 0 20px;
-  font-size: 16px;
-  outline: none;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-.search-bar input::placeholder {
-  color: #aaa;
 }
 
 .burger-menu {
