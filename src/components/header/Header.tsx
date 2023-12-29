@@ -8,12 +8,10 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Hjem", route: "/" },
     { name: "Om KHCustom", route: "/about" },
-    { name: "Kontakt os", route: "/contact" },
-    { name: "Products", route: "/products" },
     { name: "Vores løsninger", route: "/services" },
-    // Add more items here
+    { name: "Toldregler", route: "/customRules" },
+    { name: "Kontakt os", route: "/contact" },
   ];
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {

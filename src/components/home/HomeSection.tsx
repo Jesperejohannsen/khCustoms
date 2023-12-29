@@ -22,7 +22,7 @@ const HomeSection = () => {
             altid klar til at svare på dine spørgsmål, og give dig den bedste
             service.
           </p>
-          <Button to="/services">Learn More</Button>
+          <Button to="/services">Læs mere</Button>
         </div>
         <div className="home-section-image">
           <img src={customsPicture} alt="Customs" />
@@ -42,7 +42,7 @@ const HomeSection = () => {
             Vejledning omkring Brexit og de engelske toldregler -
             Rettelsesangivelser og manuelle toldopkrævninger
           </p>
-          <Button to="/solutions">Learn More</Button>
+          <Button to="/solutions">Læs mere</Button>
         </div>
         <div className="home-section-image">
           <img src={compliancePicture} alt="Services" />
