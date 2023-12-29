@@ -8,3 +8,9 @@
     margin: 0 0 10px;
     color: #6c757d;
   }
+
+  .linkedin-icon {
+    color: rgb(38, 117, 235);
+    font-size: 30px;
+    transition: color 0.3s ease;
+  }
