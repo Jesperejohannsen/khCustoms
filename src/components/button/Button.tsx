@@ -4,6 +4,7 @@ import './button.css';
 interface ButtonProps {
   to: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 const Button = ({ to, children }: ButtonProps) => {

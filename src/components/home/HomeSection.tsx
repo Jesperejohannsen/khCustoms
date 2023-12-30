@@ -39,7 +39,7 @@ const HomeSection = () => {
             Vejledning omkring Brexit og de engelske toldregler -
             Rettelsesangivelser og manuelle toldopkrævninger
           </p>
-          <Button to="/solutions">Læs mere</Button>
+          <Button className="read-more-button" to="/services">Læs mere</Button>
         </div>
         <div className="home-section-image">
           <img src={compliancePicture} alt="Services" />

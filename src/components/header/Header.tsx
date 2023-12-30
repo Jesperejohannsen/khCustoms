@@ -11,10 +11,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ homeSectionParagraphs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
-    { name: "Om KHCustom", route: "/about" },
-    { name: "Vores løsninger", route: "/services" },
-    { name: "Toldregler", route: "/customRules" },
-    { name: "Kontakt os", route: "/contact" },
+    { name: "Om KHCustom", route: "/omKhCustoms" },
+    { name: "Vores løsninger", route: "/løsninger" },
+    { name: "Toldregler", route: "/toldregler" },
+    { name: "Kontakt os", route: "/kontakt" },
   ];
 
   const toggleMenu = () => {

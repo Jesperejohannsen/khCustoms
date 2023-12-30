@@ -102,7 +102,7 @@ const ContactForm = () => {
         )}
         <div>{form.description.length} / 400 characters</div>
       </div>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Send" />
       {isSubmitted && (
         <div className="success">
           Vi har modtaget din besked og kontakter dig snarest!
