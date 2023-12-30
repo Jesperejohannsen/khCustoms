@@ -1,0 +1,74 @@
+.solutions-site {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .solutions-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .solutions-details div {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .solutions-details h2 {
+    color: #333;
+  }
+  
+  .solutions-details p {
+    color: #666;
+  }
+  
+
+
+  #faShip {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #faShip:hover {
+    animation: sail 1s infinite;
+    color: #0a3286;
+  }
+  
+  @keyframes sail {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  #faPlane {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #faPlane:hover {
+    animation: fly 1s infinite;
+    color: #98bdba;
+  }
+  
+  @keyframes fly {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0px); }
+  }
+
+  #faTruck {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #faTruck:hover {
+    animation: drive 1s infinite;
+    color: #1d6660;
+  }
+  
+  @keyframes drive {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0px); }
+  }
