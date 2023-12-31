@@ -27,21 +27,25 @@
   }
   
   .solutionsSectionOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .solutionsSectionOne > div {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    justify-self: space-between;
+    flex: 1;
   }
-  
+
   .solutionsSectionOne h1 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
+
   .solutionsSectionOne p {
     color: #666;
     line-height: 1.6;
