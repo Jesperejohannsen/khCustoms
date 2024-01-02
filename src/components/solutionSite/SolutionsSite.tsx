@@ -8,7 +8,7 @@ const SolutionsSite = () => {
     <div className="solutions-site">
       <div className="solutionsSectionOne">
         <div className="solutionsSectionOneDivOne">
-          <h1>Our Solutions</h1>
+          <h1>Vores løsninger</h1>
           <p>
             We provide custom clearance services for import/export of cargo from
             all around the world.
@@ -38,7 +38,7 @@ const SolutionsSite = () => {
       </div>
       <div className="solutions-details">
         <div>
-          <h2>Sea Freight</h2>
+          <h2>Sø Fragt</h2>
           <p>
             We offer comprehensive sea freight solutions with a focus on
             cost-effectiveness and efficient handling.
@@ -46,7 +46,7 @@ const SolutionsSite = () => {
           <FontAwesomeIcon id="faShip" icon={faShip} size="3x" />
         </div>
         <div>
-          <h2>Land Freight</h2>
+          <h2>Land Frragt</h2>
           <p>
             We provide reliable and efficient land freight services to ensure
             your goods reach their destination on time.
@@ -54,7 +54,7 @@ const SolutionsSite = () => {
           <FontAwesomeIcon id="faTruck" icon={faTruck} size="3x" />
         </div>
         <div>
-          <h2>Air Freight</h2>
+          <h2>Luft Freight</h2>
           <p>
             We provide fast and secure air freight services to meet your urgent
             shipping needs.
