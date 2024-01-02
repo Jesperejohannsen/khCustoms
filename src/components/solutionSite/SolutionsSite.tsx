@@ -7,12 +7,15 @@ const SolutionsSite = () => {
   return (
     <div className="solutions-site">
       <div className="solutionsSectionOne">
+        <div>
           <h1>Vores løsninger</h1>
           <p>
             We provide custom clearance services for import/export of cargo from
             all around the world.
           </p>
           <img src={compliancePicture} alt="" />    
+        </div>
+        <div className="solutionList">
           <h3>
             Vi kan hjælpe dig med følgende:
             <ul>
@@ -31,6 +34,7 @@ const SolutionsSite = () => {
               <li>Rettelsesangivelser og manuelle toldopkrævninger</li>
             </ul>
           </h3>
+        </div>
       </div>
       <div className="solutions-details">
         <div>
