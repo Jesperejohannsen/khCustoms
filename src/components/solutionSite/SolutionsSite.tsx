@@ -7,15 +7,12 @@ const SolutionsSite = () => {
   return (
     <div className="solutions-site">
       <div className="solutionsSectionOne">
-        <div className="solutionsSectionOneDivOne">
           <h1>Vores løsninger</h1>
           <p>
             We provide custom clearance services for import/export of cargo from
             all around the world.
           </p>
-          <img src={compliancePicture} alt="" />
-        </div>
-        <div className="solutionsSectionOneDivTwo">
+          <img src={compliancePicture} alt="" />    
           <h3>
             Vi kan hjælpe dig med følgende:
             <ul>
@@ -34,7 +31,6 @@ const SolutionsSite = () => {
               <li>Rettelsesangivelser og manuelle toldopkrævninger</li>
             </ul>
           </h3>
-        </div>
       </div>
       <div className="solutions-details">
         <div>
@@ -46,7 +42,7 @@ const SolutionsSite = () => {
           <FontAwesomeIcon id="faShip" icon={faShip} size="3x" />
         </div>
         <div>
-          <h2>Land Frragt</h2>
+          <h2>Land Fragt</h2>
           <p>
             We provide reliable and efficient land freight services to ensure
             your goods reach their destination on time.
@@ -54,7 +50,7 @@ const SolutionsSite = () => {
           <FontAwesomeIcon id="faTruck" icon={faTruck} size="3x" />
         </div>
         <div>
-          <h2>Luft Freight</h2>
+          <h2>Luft Fragt</h2>
           <p>
             We provide fast and secure air freight services to meet your urgent
             shipping needs.
