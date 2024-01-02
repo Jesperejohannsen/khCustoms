@@ -16,7 +16,7 @@ const SolutionsSite = () => {
           <img src={compliancePicture} alt="" />
         </div>
         <div className="solutionsSectionOneDivTwo">
-          <p>
+          <h3>
             Vi kan hjælpe dig med følgende:
             <ul>
               <li>Toldklarering indenfor sø, luft og vej</li>
@@ -33,7 +33,7 @@ const SolutionsSite = () => {
               <li>Vejledning omkring Brexit og de engelske toldregler</li>
               <li>Rettelsesangivelser og manuelle toldopkrævninger</li>
             </ul>
-          </p>
+          </h3>
         </div>
       </div>
       <div className="solutions-details">
