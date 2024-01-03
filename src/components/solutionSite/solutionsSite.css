@@ -2,24 +2,38 @@
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333;
 }
 
 .solutionsSectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  display: flex;
+}
+
+.solutionImage,
+.solutionList {
+  flex: 1;
+}
+
+.solutionImage img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
 .solutionsSectionOne h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .solutionsSectionOne p {
@@ -28,25 +42,28 @@
   color: #666;
 }
 
-.solutionsSectionOne img {
-  width: 50%;
-  height: auto;
+.solutionsSectionOne h3 {
+  font-size: 1.2em;
   margin-top: 20px;
 }
 
-.solutionsSectionOne h3 {
-  font-size: 1.2em;
-  margin-top: 20px;}
-
-.solutionsSectionOne ul {
-  padding-left: 30px;
-}
-
-.solutionList{
+.solutionList {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 20px;
+  margin-top: 20px;
+}
+
+.solutionList ul {
+  padding-left: 20px;
+}
+
+.solutionList ul li {
+  margin-top: 7px;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
 }
 
 .solutions-details {
@@ -76,49 +93,91 @@
   color: #666;
 }
 
-  /* FAV ICONS START */
+/* FAV ICONS START */
 
-  #faShip {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  #faShip:hover {
-    animation: sail 1s infinite;
-    color: #0a3286;
-  }
-  
-  @keyframes sail {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-  }
+#faShip {
+  transition: transform 0.3s ease-in-out;
+}
 
-  #faPlane {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  #faPlane:hover {
-    animation: fly 1s infinite;
-    color: #98bdba;
-  }
-  
-  @keyframes fly {
-    0% { transform: translateX(0px); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0px); }
-  }
+#faShip:hover {
+  animation: sail 1s infinite;
+  color: #0a3286;
+}
 
-  #faTruck {
-    transition: transform 0.3s ease-in-out;
+@keyframes sail {
+  0% {
+    transform: translateY(0px);
   }
-  
-  #faTruck:hover {
-    animation: drive 1s infinite;
-    color: #1d6660;
+  50% {
+    transform: translateY(-10px);
   }
-  
-  @keyframes drive {
-    0% { transform: translateX(0px); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0px); }
+  100% {
+    transform: translateY(0px);
   }
+}
+
+#faPlane {
+  transition: transform 0.3s ease-in-out;
+}
+
+#faPlane:hover {
+  animation: fly 1s infinite;
+  color: #98bdba;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+#faTruck {
+  transition: transform 0.3s ease-in-out;
+}
+
+#faTruck:hover {
+  animation: drive 1s infinite;
+  color: #1d6660;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.new-section {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.new-section-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.new-section-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new-section-content p {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
