@@ -7,7 +7,7 @@ const SolutionsSite = () => {
   return (
     <div className="solutions-site">
       <div className="solutionsSectionOne">
-        <div>
+        <div className="solutionImage">
           <h1>Vores løsninger</h1>
           <p>
             We provide custom clearance services for import/export of cargo from
@@ -62,6 +62,14 @@ const SolutionsSite = () => {
           <FontAwesomeIcon id="faPlane" icon={faPlane} size="3x" />
         </div>
       </div>
+      <div className="new-section">
+      <h2 className="new-section-header">Your New Header</h2>
+      <div className="new-section-content">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+      </div>
+    </div>
     </div>
   );
 };
