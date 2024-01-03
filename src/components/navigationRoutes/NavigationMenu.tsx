@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 
 interface MenuItem {
   name: string;
@@ -17,7 +16,7 @@ const NavigationMenu: React.FC<MenuProps> = ({ items, isOpen }) => (
     <ul className={`nav-menu ${isOpen ? 'open' : ''}`}>
       {items.map((item, index) => (
         <li key={index}>
-          <Link to={item.route}>{item.name}</Link>
+          <NavLink to={item.route}>{item.name}</NavLink>
         </li>
       ))}
     </ul>
