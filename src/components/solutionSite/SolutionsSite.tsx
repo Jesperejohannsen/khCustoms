@@ -19,7 +19,7 @@ const SolutionsSite = () => {
           <h3>
             Vi kan hjælpe dig med følgende:
             <ul>
-              <li>Toldklarering indenfor sø, luft og vej</li>
+              <li>Toldklarering indenfor sø, vej og luft</li>
               <li>Gennemgang af dine toldforhold og tolddokumenter</li>
               <li>Vejledning om toldregler i EU</li>
               <li>Assistance i forhold til varekoder</li>
@@ -65,9 +65,9 @@ const SolutionsSite = () => {
       <div className="new-section">
       <h2 className="new-section-header">Your New Header</h2>
       <div className="new-section-content">
-        <p>First paragraph</p>
-        <p>Second paragraph</p>
-        <p>Third paragraph</p>
+        <p>Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
+        <p>Second paragraphDummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
+        <p>Third paragraphDummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
       </div>
     </div>
     </div>
