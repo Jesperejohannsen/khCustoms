@@ -16,12 +16,14 @@
     padding: 20px;
   }
   
-  .accordion {
-    margin-top: 20px;
+  .accordion-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
   }
   
   .accordion-button {
-    background-color: #008CBA; /* Blue */
+    background-color: #1c1e1f; 
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -31,12 +33,24 @@
     margin: 4px 2px;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .accordion-button.active {
+    background-color: #3396af;
+    transition: background-color 0.3s ease; 
   }
   
   .accordion-content {
+    text-align: center;
+    width: 70%;
     margin-top: 10px;
+    margin-left: 10%;
     padding: 15px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 18px; 
+    line-height: 1.6;
+    font-family: Arial, sans-serif; 
   }
