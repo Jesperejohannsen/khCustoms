@@ -7,7 +7,7 @@
   .contact-form label {
     font-weight: bold;
     font-size: 1.5em; 
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
   }
 
   .contact-form input,
@@ -17,6 +17,8 @@
     border-radius: 5px;
     box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
     width: 100%; 
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .contact-form textarea {
