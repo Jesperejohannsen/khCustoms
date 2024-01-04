@@ -76,10 +76,6 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.active-link {
-  color: #f00;
-}
-
 @media (max-width: 600px) {
   .logo {
     display: none;
@@ -112,7 +108,10 @@
   }
 
   .burger-menu {
-    padding-top: 15px;
     display: flex;
+  }
+
+  .burger-menu.open div {
+    background-color: #ff2828;
   }
 }
