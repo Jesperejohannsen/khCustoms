@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./toldReglerSite.css";
-import Footer from "../footer/Footer";
 
 const ToldreglerSite = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
