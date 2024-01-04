@@ -7,6 +7,7 @@ import { homeSectionParagraphs } from "./components/home/HomeSection";
 import SearchResult from "./components/searchbar/SearchResult"; 
 import SolutionsSite from "./components/solutionSite/SolutionsSite";
 import ToldreglerSite from "./components/toldreglerSite/ToldreglerSite";
+import ContactSite from "./components/contactSite/ContactSite";
 
 const App: React.FC = () => (
   <Router>
@@ -17,6 +18,7 @@ const App: React.FC = () => (
       <Route path="/search/:term" component={SearchResult} /> 
       <Route path="/services" component={SolutionsSite} />
       <Route path="/toldregler" component={ToldreglerSite} />
+      <Route path="/kontakt" component={ContactSite} />
     </Switch>
     <Footer />
   </Router>
