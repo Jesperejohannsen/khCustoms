@@ -1,15 +1,12 @@
 import { useState } from "react";
 import NavigationMenu from "../navigationRoutes/NavigationMenu";
-import SearchBar from "../../components/searchbar/Searchbar";
 import "./header.css";
 import logo from "../../assets/khCustomLogo.png";
 import { Link } from "react-router-dom";
 
-interface HeaderProps {
-  homeSectionParagraphs: string[];
-}
 
-const Header: React.FC<HeaderProps> = ({ homeSectionParagraphs }) => {
+
+const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems = [
     { name: "Om KHCustom", route: "/omKhCustoms" },
@@ -38,9 +35,8 @@ const Header: React.FC<HeaderProps> = ({ homeSectionParagraphs }) => {
           <div></div>
           <div></div>
         </div>
-        <NavigationMenu items={menuItems} isOpen={isOpen} />
+      <NavigationMenu items={menuItems} isOpen={isOpen} toggleMenu={toggleMenu} />
       </nav>
-      <SearchBar paragraphs={homeSectionParagraphs} />
     </header>
   );
 };
