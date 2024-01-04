@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./toldReglerSite.css";
+import Footer from "../footer/Footer";
 
 const ToldreglerSite = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
@@ -93,9 +94,22 @@ const ToldreglerSite = () => {
           {openAccordion === "accordion4" && (
             <p className="accordion-content">// Content for accordion 4</p>
           )}
+          <div className="section">
+            <h2 className="section-title">Section 1</h2>
+            <p className="section-content">Content for section 1</p>
+          </div>
+
+          <div className="section">
+            <h2 className="section-title">Section 2</h2>
+            <p className="section-content">Content for section 2</p>
+          </div>
+
+          <div className="section">
+            <h2 className="section-title">Section 3</h2>
+            <p className="section-content">Content for section 3</p>
+          </div>
         </div>
       </main>
-      <footer className="site-footer">© 2022 Toldregler Site</footer>
     </div>
   );
 };
