@@ -17,7 +17,6 @@ const ToldreglerSite = () => {
     <div className="toldregler-site">
       <header className="site-header">Information omkring toldregler</header>
       <main className="site-main">
-        <h1>Toldregler</h1>
         <div className="accordion">
           <div className="accordion-buttons">
             <button
@@ -26,7 +25,7 @@ const ToldreglerSite = () => {
                 openAccordion === "accordion1" ? "active" : ""
               }`}
             >
-              {openAccordion === "accordion1" ? "Hide" : "Show"} MIO
+              {openAccordion === "accordion1" ? "" : ""} MIO
             </button>
             <button
               onClick={toggleOpen1}
@@ -34,7 +33,7 @@ const ToldreglerSite = () => {
                 openAccordion === "accordion2" ? "active" : ""
               }`}
             >
-              {openAccordion === "accordion2" ? "Hide" : "Show"} Jern og stål
+              {openAccordion === "accordion2" ? "" : ""} Jern og stål
             </button>
             <button
               onClick={toggleOpen2}
@@ -42,7 +41,7 @@ const ToldreglerSite = () => {
                 openAccordion === "accordion3" ? "active" : ""
               }`}
             >
-              {openAccordion === "accordion3" ? "Hide" : "Show"} rules 2
+              {openAccordion === "accordion3" ? "" : ""} Find ud af denne
             </button>
             <button
               onClick={toggleOpen3}
@@ -50,7 +49,7 @@ const ToldreglerSite = () => {
                 openAccordion === "accordion4" ? "active" : ""
               }`}
             >
-              {openAccordion === "accordion4" ? "Hide" : "Show"} rules 3
+              {openAccordion === "accordion4" ? "" : ""} Find ud af denne
             </button>
           </div>
           {openAccordion === "accordion1" && (
@@ -91,21 +90,52 @@ const ToldreglerSite = () => {
             <p className="accordion-content">// Content for accordion 3</p>
           )}
           {openAccordion === "accordion4" && (
-            <p className="accordion-content">// Content for accordion 4</p>
+            <p className="accordion-content">// Content for accodion 4</p>
           )}
-          <div className="section">
-            <h2 className="section-title">Section 1</h2>
-            <p className="section-content">Content for section 1</p>
+          <div className="custom-rules-section">
+            <h2 className="custom-rules-section-title">Section 1</h2>
+            <p className="custom-rules-section-content">Content for section 1</p>
           </div>
 
-          <div className="section">
-            <h2 className="section-title">Section 2</h2>
-            <p className="section-content">Content for section 2</p>
+          <div className="custom-rules-section">
+            <h2 className="custom-rules-section-title">Section 2</h2>
+            <p className="custom-rules-section-content">Content for section 2</p>
           </div>
 
-          <div className="section">
-            <h2 className="section-title">Section 3</h2>
-            <p className="section-content">Content for section 3</p>
+          <div className="custom-rules-section">
+            <h2 className="custom-rules-section-title">Section 3</h2>
+            <p className="custom-rules-section-content">Content for section 3</p>
+          </div>
+
+          <div className="useful-links-for-customs">
+            <h2>Nyttige links til toldregler mm.</h2>
+            <ul>
+              <li>
+                <a href="https://www.toldpriser.dk/" target="_blank" rel="noreferrer">
+                  Toldpriser
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skat.dk/" target="_blank" rel="noreferrer">
+                  Skat.dk
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skat.dk/skat.aspx?oid=2249606" target="_blank" rel="noreferrer">
+                  Toldregler
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skat.dk/skat.aspx?oid=2249606" target="_blank" rel="noreferrer">
+                  Toldregler
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skat.dk/skat.aspx?oid=2249606" target="_blank" rel="noreferrer">
+                  Toldregler
+                </a>
+              </li>
+              </ul>
           </div>
         </div>
       </main>
