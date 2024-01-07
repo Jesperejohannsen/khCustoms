@@ -182,3 +182,19 @@
   margin: 0 10px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .solutionsSectionOne {
+    flex-direction: column;
+  }
+
+  .solutionImage,
+  .solutionList {
+    flex: none;
+    width: 100%;
+  }
+
+  .solutionImage img {
+    width: 100%;
+  }
+}
