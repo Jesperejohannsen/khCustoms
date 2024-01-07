@@ -1,108 +1,130 @@
 .toldregler-site {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-  }
-  
-  .site-header {
-    background-color: #003366;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .site-main {
-    padding: 20px;
-  }
-  
-  .accordion-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  .accordion-button {
-    background-color: #003366; 
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease; 
-    width: auto;
-  }
-  
-  .accordion-button.active {
-    background-color: #3396af;
-    transition: background-color 0.3s ease; 
-  }
-  
-  .accordion-content {
-    text-align: center;
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 10%;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 18px; 
-    line-height: 1.6;
-    font-family: Arial, sans-serif; 
-  }
-
-  .custom-rules-section {
-    border: 1px solid #ddd;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
-  
-  .custom-rules-section-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .custom-rules-section-content {
-    font-size: 16px;
-  }
 
-  .useful-links-for-customs {
-    border: 1px solid #ddd;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
+.site-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-main {
+  padding: 20px;
+}
+
+.accordion-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.accordion-button {
+  background-color: #003366;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.accordion-button.active {
+  background-color: #3396af;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+  text-align: center;
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 10%;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+.custom-rules-section {
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.custom-rules-section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-rules-section-content {
+  font-size: 16px;
+}
+
+.useful-links-for-customs {
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 .useful-links-for-customs h2 {
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .useful-links-for-customs ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .useful-links-for-customs ul li {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .toldregler-site {
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+
+  .accordion-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .accordion-button {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .accordion-content {
+    order: 1;
+  }
 }
