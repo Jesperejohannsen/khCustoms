@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import SolutionsSite from "./components/solutionSite/SolutionsSite";
 import ToldreglerSite from "./components/toldreglerSite/ToldreglerSite";
 import ContactSite from "./components/contactSite/ContactSite";
+import omKhCustoms from "./components/about/OmKhCustom";
 
 const App: React.FC = () => (
   <Router>
@@ -16,6 +17,7 @@ const App: React.FC = () => (
       <Route path="/services" component={SolutionsSite} />
       <Route path="/toldregler" component={ToldreglerSite} />
       <Route path="/kontakt" component={ContactSite} />
+      <Route path="/omKhCustoms" component={omKhCustoms} />
     </Switch>
     <Footer />
   </Router>
