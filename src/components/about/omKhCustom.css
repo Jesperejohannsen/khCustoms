@@ -1,48 +1,60 @@
 .omKhCustom {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .omKhCustom h1,
-  .omKhCustom h2 {
-    color: #444;
-  }
-  
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.omKhCustom h1,
+.omKhCustom h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.omKhCustom h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.omKhCustom h2 {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.omKhCustom p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.paragraphStyle {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.omKhCustomButton {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
   .omKhCustom h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .omKhCustom h2 {
-    text-align: center;
     font-size: 2em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
-  }
-  
-  .omKhCustom p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    text-align: justify;
-  }
-  
-  .paragraphStyle {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
   }
 
-  .omKhCustomButton{
-    text-align: center;
+  .omKhCustom h2 {
+    font-size: 1.5em;
   }
+
+  .omKhCustom p,
+  .paragraphStyle {
+    font-size: 1em;
+  }
+}
