@@ -1,28 +1,48 @@
 .omKhCustom {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #333;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.omKhCustom h1, .omKhCustom h2 {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .omKhCustom h1,
+  .omKhCustom h2 {
     color: #444;
-}
-
-.omKhCustom h1 {
+  }
+  
+  .omKhCustom h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
-}
-
-.omKhCustom h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .omKhCustom h2 {
+    text-align: center;
     font-size: 2em;
     margin-top: 1em;
     margin-bottom: 0.5em;
-}
-
-.omKhCustom p {
+    text-transform: uppercase;
+  }
+  
+  .omKhCustom p {
     font-size: 1.2em;
-    line-height: 1.6;
     margin-bottom: 1em;
-}
+    text-align: justify;
+  }
+  
+  .paragraphStyle {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .omKhCustomButton{
+    text-align: center;
+  }
