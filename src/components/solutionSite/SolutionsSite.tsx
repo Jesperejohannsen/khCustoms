@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShip, faTruck, faPlane } from "@fortawesome/free-solid-svg-icons";
-import compliancePicture from "../../assets/compliance.png"; 
+import compliancePicture from "../../assets/compliance.png";
 import "./solutionsSite.css";
 
 const SolutionsSite = () => {
@@ -13,7 +13,7 @@ const SolutionsSite = () => {
             We provide custom clearance services for import/export of cargo from
             all around the world.
           </p>
-          <img src={compliancePicture} alt="" />    
+          <img src={compliancePicture} alt="" />
         </div>
         <div className="solutionList">
           <h3>
@@ -63,13 +63,50 @@ const SolutionsSite = () => {
         </div>
       </div>
       <div className="new-section">
-      <h2 className="new-section-header">Your New Header</h2>
-      <div className="new-section-content">
-        <p>Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
-        <p>Second paragraphDummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
-        <p>Third paragraphDummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. Dummy text for show. </p>
+        <h2 className="new-section-header">Your New Header</h2>
+        <div className="new-section-content">
+          <div className="new-section-div">
+            <h5>Toldrådgivning og Overensstemmelsesstyring:</h5>
+            <p>
+              Hos KH Customs tilbyder vi omfattende toldrådgivning, der guider
+              virksomheder gennem kompleksiteten af toldlovgivningen. Vores
+              tjenester omfatter klassificering af varer, vurdering af
+              toldafgifter og afgifter samt udvikling af strategier for at
+              optimere toldomkostningerne. Fordele: Ved at samarbejde med KH
+              Customs opnår vores kunder ikke kun juridisk overensstemmelse, men
+              reducerer også risikoen for toldbøder og maksimerer
+              toldoptimeringen ved hjælp af skræddersyede strategier.
+            </p>
+          </div>
+          <div className="new-section-div">
+            <h5>Automatiseret Toldbehandling:</h5>
+            <p>
+              KH Customs tilbyder en state-of-the-art automatiseret
+              toldbehandlingstjeneste, der integrerer avancerede teknologier som
+              automatiseret klassificering, digitale toldplatforme og
+              elektronisk informationsudveksling med toldmyndigheder. Fordele:
+              Vores automatiseringsløsning øger effektiviteten, reducerer
+              risikoen for fejl og fremskynder toldklareringen, hvilket
+              resulterer i hurtigere og mere problemfrie leverancer for vores
+              kunder.
+            </p>
+          </div>
+          <div className="new-section-div">
+            <h5>Global Toldstyring og Harmonisering:</h5>
+            <p>
+              KH Customs tilbyder en unik løsning, der harmoniserer
+              toldprocesserne på tværs af grænser og regioner. Vi skaber
+              standardiserede procedurer, implementerer ensartede it-systemer og
+              koordinerer toldaktiviteter globalt. Fordele: Vores globale
+              toldstyringsløsning giver virksomheder, der opererer
+              internationalt, den fordel af ensartede og standardiserede
+              toldprocesser. Dette resulterer i forbedret styring, øget
+              synlighed og konsistens i toldhåndteringen på tværs af alle
+              grænser.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   );
 };
