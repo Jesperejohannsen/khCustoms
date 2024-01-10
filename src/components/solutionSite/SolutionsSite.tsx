@@ -63,7 +63,7 @@ const SolutionsSite = () => {
         </div>
       </div>
       <div className="new-section">
-        <h2 className="new-section-header">Your New Header</h2>
+        <h2 className="new-section-header">Hvad kan vi gøre for dig?</h2>
         <div className="new-section-content">
           <div className="new-section-div">
             <h5>Toldrådgivning og Overensstemmelsesstyring:</h5>
