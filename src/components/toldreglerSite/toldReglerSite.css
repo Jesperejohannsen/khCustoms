@@ -37,6 +37,10 @@
   width: auto;
 }
 
+.accordion-button:hover {
+  background-color: #3396af; 
+}
+
 .accordion-button.active {
   background-color: #3396af;
   transition: background-color 0.3s ease;
@@ -127,8 +131,16 @@
     width: 48%;
     margin-bottom: 10px;
   }
+}
 
-  .accordion-content {
-    order: 1;
+@media screen and (max-width: 600px) {
+  .accordion-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .accordion-button {
+    flex: 1 0 auto;
+    margin: 5px;
   }
 }
