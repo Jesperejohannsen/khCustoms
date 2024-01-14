@@ -52,11 +52,11 @@ const ContactForm = () => {
     description: string;
   }) => {
     const newErrors = { name: "", email: "", description: "" };
-    if (form.name.trim() === "") newErrors.name = "Please enter your name.";
+    if (form.name.trim() === "") newErrors.name = "Venligst skriv dit navn.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      newErrors.email = "Please enter a valid email address.";
+      newErrors.email = "Venligst skriv din e-mail.";
     if (form.description.split(" ").filter((word) => word !== "").length === 0)
-      newErrors.description = "Please enter a description.";
+      newErrors.description = "Venligst skriv en begrundelse.";
     setErrors(newErrors);
     return newErrors;
   };
@@ -100,7 +100,7 @@ const ContactForm = () => {
         {errors.description && (
           <div className="error">{errors.description}</div>
         )}
-        <div>{form.description.length} / 400 characters</div>
+        <div>{form.description.length} / 400 karakter</div>
       </div>
       <input type="submit" value="Send" />
       {isSubmitted && (
