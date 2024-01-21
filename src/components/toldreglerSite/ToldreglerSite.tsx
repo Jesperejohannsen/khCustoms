@@ -135,6 +135,11 @@ const ToldreglerSite = () => {
                   Toldregler
                 </a>
               </li>
+              <li>
+                <a href="https://www.skat.dk/skat.aspx?oid=2249606" target="_blank" rel="noreferrer">
+                  Toldregler
+                </a>
+              </li>
               </ul>
           </div>
         </div>
